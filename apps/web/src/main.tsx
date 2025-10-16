@@ -5,6 +5,8 @@ import { Header, Counter } from "@repo/ui";
 
 const App = () => (
   <div>
+    <Header title="Playground" />
+    <p>Exploring how to work on monorepos using turborepo for the setup. Creating webapps in React/TS, built with Vite, and deployed to Vercel</p>
     <a href="https://vitejs.dev" target="_blank">
       <img src="/vite.svg" className="logo" alt="Vite logo" />
     </a>
@@ -15,7 +17,7 @@ const App = () => (
         alt="TypeScript logo"
       />
     </a>
-    <Header title="Web" />
+
     <div className="card">
       <Counter />
     </div>
