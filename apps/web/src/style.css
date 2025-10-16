@@ -13,6 +13,8 @@
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   -webkit-text-size-adjust: 100%;
+
+  --padding-normal: 24px;
 }
 
 a {
@@ -81,6 +83,12 @@ button:hover {
 button:focus,
 button:focus-visible {
   outline: 4px auto -webkit-focus-ring-color;
+}
+
+.station-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--padding-normal)
 }
 
 @media (prefers-color-scheme: light) {

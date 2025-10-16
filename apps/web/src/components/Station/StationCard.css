@@ -1,0 +1,42 @@
+.station-card-container {
+    margin-top: var(--padding-normal);
+    padding: var(--padding-normal);
+    border-radius: var(--padding-normal);
+    border: 1px solid black;
+    width: fit-content;
+    max-width: 400px;
+}
+
+h2 {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 4px;
+    text-align: left;
+}
+
+.location-container {
+    font-size: 12px;
+    font-weight: 500;
+    text-align: left;
+}
+
+.data-container {
+    display: flex;
+    justify-content: space-around;
+    margin: 24px;
+}
+
+p {
+    margin: 0;
+}
+
+.bike-availability-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.bike-availability-number {
+    font-size: 24px;
+    font-weight: bold;
+}
+
