@@ -16,7 +16,7 @@ export default function useStationData(): UseStationDataReturn {
         const fetchData = async () => {
             setIsLoading(true);
             try {
-                const response = await fetch('http://api.citybik.es/v2/networks/santander-cycles')
+                const response = await fetch('https://api.citybik.es/v2/networks/santander-cycles')
                 if (!response.ok) throw new Error("response not okay");
                 const responseData = await response.json();
                 setData(responseData)
