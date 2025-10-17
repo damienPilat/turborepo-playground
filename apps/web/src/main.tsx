@@ -5,7 +5,8 @@ import StationContainer from "./components/Station/StationContainer";
 
 const App = () => (
     <div>
-        <Header title="Playground"/>
+        <Header title="Santander Bikes"/>
+        <p>See details about your favourite bike stations!</p>
         <p>Exploring how to work on monorepos using turborepo for the setup. Creating webapps in React/TS, built with
             Vite, and deployed to Vercel</p>
 

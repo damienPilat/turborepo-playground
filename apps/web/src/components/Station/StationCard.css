@@ -1,16 +1,18 @@
 .station-card-container {
-    margin-top: var(--padding-normal);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
     padding: var(--padding-normal);
     border-radius: var(--padding-normal);
-    border: 1px solid black;
-    width: fit-content;
-    max-width: 400px;
+    background-color: #e7ecf6;
+    width: 400px;
+    height: 145px;
 }
 
 h2 {
     font-size: 24px;
     font-weight: bold;
-    margin-bottom: 4px;
+    margin: unset;
     text-align: left;
 }
 
@@ -20,10 +22,17 @@ h2 {
     text-align: left;
 }
 
+.location-tag {
+    display: flex;
+    gap: 5px;
+    align-items: center;
+}
+
 .data-container {
     display: flex;
     justify-content: space-around;
-    margin: 24px;
+    margin: var(--padding-normal);
+    margin-bottom: 0;
 }
 
 p {
@@ -34,6 +43,18 @@ p {
     display: flex;
     flex-direction: column;
     align-items: center;
+
+    .low-availability {
+        color: var(--color-danger)
+    }
+
+    .med-availability {
+        color: var(--color-warn)
+    }
+
+    .high-availability {
+        color: var(--color-success)
+    }
 }
 .bike-availability-number {
     font-size: 24px;
