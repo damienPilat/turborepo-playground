@@ -1,12 +1,9 @@
 .searchBar-container {
     background: white;
-    width: calc(100% - var(--spacing-large) * 2);
     display: flex;
-    flex-direction: column;
     gap: var(--spacing-medium);
     align-items: center;
-    /*margin: var(--spacing-large);*/
-    padding: var(--spacing-large);
+    padding: var(--spacing-medium) var(--spacing-large);
 
     label {
         font-size: var(--font-size-medium);
@@ -19,7 +16,7 @@
         padding: 4px 20px;
         border-radius: var(--spacing-medium);
         border: 1px solid grey;
-        width: 100%;
+        flex-grow: 1;
         background-color: #f9f9f9;
     }
 }

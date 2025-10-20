@@ -1,0 +1,32 @@
+section {
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    font-weight: 500;
+
+    box-shadow: 0 0 7px rgba(211, 211, 211, 0.8);
+
+    background-color: rgba(255, 255, 255);
+    margin: 0 var(--spacing-medium) var(--spacing-medium) 0;
+    padding: var(--spacing-medium) var(--spacing-large);
+    border-radius: var(--spacing-medium);
+}
+
+summary {
+    text-align: center;
+    margin-bottom: var(--spacing-small);
+}
+
+h4 {
+    margin-bottom: var(--spacing-small);
+}
+
+details {
+    text-align: left;
+    max-width: 400px;
+    max-height: 80vh;
+}
+
+ul {
+    margin: unset
+}

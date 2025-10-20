@@ -1,3 +1,4 @@
+import "./StationContainer.css"
 import {SearchBar} from "@repo/ui";
 import {Dispatch, SetStateAction, useEffect, useState} from "react";
 import useDebounce from "../hooks/useDebounce";
@@ -27,6 +28,8 @@ export default function StationSearchBar({stationData, setSearchResults}: Statio
     }, [debouncedUserSearchStation, stationData])
 
     return (
-        <SearchBar value={userSearchStation} setSearchTerm={setUserSearchStation}/>
+        <>
+            <SearchBar value={userSearchStation} setSearchTerm={setUserSearchStation}/>
+        </>
     )
 }
