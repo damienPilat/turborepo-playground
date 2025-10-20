@@ -1,0 +1,72 @@
+.container-skeleton {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: var(--padding-normal);
+    border-radius: var(--padding-normal);
+    box-shadow: 0 0 15px #e3e3e3;
+    width: 400px;
+    height: 145px;
+}
+
+.name-skeleton {
+    width: 100%;
+    height: 24px;
+    background-color: #e2e5e7;
+    border-radius: var(--spacing-small);
+    margin-bottom: var(--spacing-small);
+
+    background-image: linear-gradient(
+            to right,
+            #e2e5e7 0%, /* Base color */ #f2f2f2 20%, /* Shimmer start */ #e2e5e7 40% /* Shimmer end */
+    );
+    background-size: 200% 100%;
+    animation: skeleton-loading 2s infinite linear;
+}
+
+.location-skeleton {
+    width: 50%;
+    height: 12px;
+    background-color: #e2e5e7;
+    border-radius: var(--spacing-small);
+
+    background-image: linear-gradient(
+            to right,
+            #e2e5e7 0%, /* Base color */ #f2f2f2 20%, /* Shimmer start */ #e2e5e7 40% /* Shimmer end */
+    );
+    background-size: 200% 200%;
+    animation: skeleton-loading 2s infinite linear;
+}
+
+.data-container-skeleton {
+    display: flex;
+    justify-content: space-around;
+    margin: var(--padding-normal);
+    margin-bottom: 0;
+}
+
+p {
+    margin: 0;
+}
+
+.bike-availability-container-skeleton {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.bike-count-skeleton {
+    font-size: 24px;
+    color: #e2e5e7;
+    font-weight: bold;
+}
+
+@keyframes skeleton-loading {
+    0% {
+        background-position: 200% 0;
+    }
+    100% {
+        background-position: -200% 0;
+    }
+}
+

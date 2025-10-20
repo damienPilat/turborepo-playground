@@ -1,3 +1,26 @@
 .station-pagination {
     margin-bottom: 150px;
 }
+
+.filter-buttons {
+    display: flex;
+    align-items: center;
+    margin: 0 var(--spacing-large) var(--spacing-large) var(--spacing-large);
+    gap: var(--spacing-medium);
+
+    button {
+        display: flex;
+        align-items: center;
+        gap: var(--spacing-small)
+    }
+
+    .filter-selected {
+        background: #646cff;
+        color: white;
+    }
+
+    button:focus,
+    button:focus-visible {
+        outline: unset;
+    }
+}
