@@ -29,7 +29,12 @@
 }
 
 .title {
+  text-wrap: wrap;
   color: rgb(211, 58, 39)
+}
+
+h1 {
+  margin: unset;
 }
 
 a {

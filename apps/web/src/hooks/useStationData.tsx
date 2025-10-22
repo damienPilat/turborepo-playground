@@ -1,5 +1,5 @@
 import {useEffect, useState} from "react";
-import {StationResponse} from "../../type/StationData";
+import {StationResponse} from "../type/StationData";
 import useInterval from "./useInterval";
 
 interface UseStationDataReturn {

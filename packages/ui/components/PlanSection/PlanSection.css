@@ -1,0 +1,37 @@
+section {
+    font-weight: 500;
+
+    box-shadow: 0 0 7px rgba(211, 211, 211, 0.8);
+
+    background-color: rgba(255, 255, 255);
+    margin: 0 var(--spacing-medium) var(--spacing-medium) 0;
+    border-radius: var(--spacing-large);
+    overflow: hidden;
+}
+
+details {
+    text-align: left;
+}
+
+summary {
+    text-align: center;
+    padding: var(--spacing-medium);
+}
+
+summary:hover {
+    background-color: rgba(211, 211, 211, 0.8);
+    border-radius: var(--spacing-large) var(--spacing-large) var(--spacing-small) var(--spacing-small);
+}
+
+.children {
+    padding: var(--spacing-large);
+    border-top: 1px solid rgba(211, 211, 211, 0.8);
+}
+
+h4 {
+    margin-bottom: var(--spacing-small);
+}
+
+ul {
+    margin: unset
+}

@@ -1,6 +1,6 @@
 import StationCard from "./StationCard";
-import useStationData from "../hooks/useStationData";
-import usePagination from "../hooks/usePagination";
+import useStationData from "../../hooks/useStationData";
+import usePagination from "../../hooks/usePagination";
 import {PaginationPrevNext,} from "@repo/ui";
 import {useCallback, useEffect, useState} from "react";
 import StationSearchBar from "./StationSearchBar";
@@ -9,6 +9,7 @@ import StationCardSkeleton from "./StationCardSkeleton";
 import {RotateCw} from "lucide-react";
 import Filters from "./Filters";
 import {Station} from "../../type/StationData";
+import MapWithMarkers from "../Map/Map";
 
 export default function StationContainer() {
 
@@ -44,7 +45,7 @@ export default function StationContainer() {
         setCurrentPage,
         rowsPerPage,
         setRowsPerPage
-    } = usePagination(filteredResults, 6);
+    } = usePagination(searchResults, 6);
 
     return (
         <>
@@ -57,6 +58,8 @@ export default function StationContainer() {
                 </button>
                 <Filters hasBikes={hasBikes} hasEmptySlots={hasEmptySlots} reset={resetSearchResults}/>
             </div>
+
+            <MapWithMarkers stationData={paginatedData}/>
 
             <div className="station-container">
                 {isLoading &&

@@ -1,7 +1,7 @@
 import {Dispatch, SetStateAction, useEffect, useMemo, useState} from "react";
 
-interface UsePaginationReturn {
-    paginatedData: any[],
+interface UsePaginationReturn<T> {
+    paginatedData: T[],
     currentPage: number,
     totalPages: number,
     setCurrentPage: Dispatch<SetStateAction<number>>
@@ -11,7 +11,7 @@ interface UsePaginationReturn {
 
 const defaultRowsPerPage = 5;
 
-export default function usePagination(data: any[], elPerPage?: number): UsePaginationReturn {
+export default function usePagination<T>(data: T[], elPerPage?: number): UsePaginationReturn<T> {
     const [currentPage, setCurrentPage] = useState(1);
     const [rowsPerPage, setRowsPerPage] = useState(elPerPage ?? defaultRowsPerPage)
 

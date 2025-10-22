@@ -1,7 +1,7 @@
 import "./StationContainer.css"
 import {SearchBar} from "@repo/ui";
 import {Dispatch, SetStateAction, useEffect, useState} from "react";
-import useDebounce from "../hooks/useDebounce";
+import useDebounce from "../../hooks/useDebounce";
 import {Station, StationResponse} from "../../type/StationData";
 
 interface StationSearchBarProps {
